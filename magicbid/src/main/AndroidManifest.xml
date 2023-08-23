@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+         android:label="@string/app_name"
+         android:theme="@style/Theme.Magicbid"
+        tools:targetApi="31">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:hardwareAccelerated="true">
+
+        </activity>
+        <activity android:name="com.magicbid.RewardedinterstitialAd" />
+        <activity android:name="com.magicbid.OpenActivity" />
+        <activity android:name="com.magicbid.NativeActivity" />
+        <activity android:name="com.magicbid.util.RewardedActivity" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6683051613977291~5947357131" />
+
+    </application>
+
+</manifest>
